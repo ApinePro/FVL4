@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, ipcMain} = require('electron')
 const path = require('path')
 
 function createWindow () {
@@ -8,7 +8,8 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true
     }
   })
 
@@ -41,3 +42,11 @@ app.on('window-all-closed', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+// 监听渲染进程发送的消息
+ipcMain.on('asynchronous-message', (event, arg1, arg2) => {
+  const reply = arg1+arg2;
+  console.log('reply: ', reply);
+  // 发送消息到主进程
+  event.sender.send('asynchronous-reply', reply);
+});
