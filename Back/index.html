@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                                     initial-scale=1.0, 
+                                     maximum-scale=1.0, 
+                                     user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>A SpringStudio & OrangeCatInter work</title>
+    <style>
+        .mycards
+        {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head" style="background-color: black;font-family: Arial, Helvetica, sans-serif;color:cornsilk">
+        <div id="header">
+            <h1 style="text-align: center;">Farmer versus Landlord: United Landlords</h1>
+            <p style="text-align: center;">A demo for Farmers versus Landlord card game for 4 players.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+            <div class="col-md-5" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+            </div>
+            <div class="col-md-2" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <img src="./source/image/PlayerT.png" alt="Cinque Terre" style="width:100%;height:100%">
+                </div>
+            </div>
+            <div class="col-md-5" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+            </div>
+        </div>
+        <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+            <div class="col-md-2" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <img src="./source/image/PlayerL.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                </div>
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <p>Player 4</p>
+                </div>
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <p>Remains Cards: 1</p>
+                </div>
+            </div>
+            <div class="col-md-8" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                <p>
+                    This is playing zone
+                </p>
+            </div>
+            <div class="col-md-2" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <img src="./source/image/PlayerR.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                </div>
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <p>Player 3</p>
+                </div>
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                    <p>Remains Cards: 10</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+            <div class="col-md-12" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">   
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0); align-content: center;">
+                    <div class="col-md-12" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                        <div class="btn-group btn-group-justified" style="max-width: fit-content;">
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/0.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button>
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/1.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/2.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/3.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/4.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/5.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/6.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/7.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+                <div id="BBB"></div>
+                <div class="row" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0); align-content: center;">
+                    <div class="col-md-12" id="menu" style="box-shadow:inset 1px -1px 1px rgb(0, 0, 0), inset -1px 1px 1px rgb(0, 0, 0);">
+                        <div class="btn-group btn-group-justified" style="max-width: fit-content;">
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/8.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button>
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/9.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/10.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/11.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/12.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/13.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <button type="button" id="button 2-1" class="btn btn-default">
+                                <img src="./source/image/14.jpg" alt="Cinque Terre" style="width:100%;height:100%">
+                            </button> 
+                            <div id="final_card"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <address>
+                <strong>OrangeCatInternational, Inc.</strong>  
+                Vaalser str. ,
+                Aachen, Nordrhein-Westfalen.<br>
+                <abbr title="Phone">P:</abbr> (028)66776677, 
+                <a href="mailto:#">apinecdqz[at]gmail[dot]com</a>
+            </address>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="card_buttons.js"></script>
+</body>
+
+</html>

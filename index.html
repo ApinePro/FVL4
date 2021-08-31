@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>FVL4</title>
-  </head>
+    <meta name="viewport" content="width=device-width, 
+                                     initial-scale=1.0, 
+                                     maximum-scale=1.0, 
+                                     user-scalable=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>A OrangeCatInter work</title> 
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-  <style>
-  body {
-  background-color: mediumseagreen;
-  background-image: url("source/trump.jpg");
-  background-size: cover;
-  }
-  h1 {
-  text-align: center;
-  color: aliceblue;
-  }
-  #loginblock {
-    text-align: center;
-  }
-  </style>
+<body background="./source/image/textile.jpg">
+    <div class="head" style="background-color: black;font-family: Arial, Helvetica, sans-serif;color:cornsilk">
+        <div id="header">
+            <h1 style="text-align: center;">Farmer versus Landlord: United Landlords</h1>
+            <p style="text-align: center;">A demo for Farmers versus Landlord card game for 4 players.</p>
+        </div>
+    </div>
+    <div id="PlayContainer"></div>
+    <!--
+    <div class="container">
+        <div class="row" style="text-align: center;">
+            <address>
+                <strong>OrangeCatInternational, Inc.</strong>  
+                Vaalser str. ,
+                Aachen, Nordrhein-Westfalen.<br>
+                <abbr title="Phone">P:</abbr> (028)66776677, 
+                <a href="mailto:#">apinecdqz[at]gmail[dot]com</a>
+            </address>
+        </div>
+    </div>
+    -->
 
-  <body>
-    <h1>FVL4 Login!</h1>
-    <div id="loginblock">
-      用户名:
-      <input type="text" id="username" name="" value="">
-      <br/>
-      密码:
-      <input type="text" id="psw" name="" value="">
-      <br/>
-      <button type="button" id="blogin">登录</button><br/>
-      <div>
-      <button type="button" id="bregister">注册新账号</button>
-      <button type="button" id="bforgetpsw">忘记密码？</button>
-      </div>
-    </div>
-    <div class="footer" id="footer">
-      <p>©Apine, 2021</p>
-    </div>
-    <!-- You can also require other files to run in this process -->
-    <script>
-    require('./renderer.js');
-    </script>
-  </body>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="Container.js"></script>
+</body>
+
 </html>
